@@ -23,12 +23,17 @@
 
 /* Base rules end */
 /* Objects start */
+body {
+  background-color: black; }
+
 /* Objects end */
 /* Components start */
 /* Header starts */
 nav {
   top: 0;
-  left: 0; }
+  left: 0;
+  position: fixed;
+  z-index: -200; }
   nav ul {
     list-style: none; }
     nav ul li {
@@ -42,10 +47,23 @@ nav {
     content: none; }
 
 /* Header ends */
-#test {
+.page {
   width: 100vw;
-  z-index: -200;
-  position: fixed; }
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#test {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  flex: 1; }
 
 /* Components end */
 /* Utilities & Overrides start */
