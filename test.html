@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>change picture</title>
+</head>
+
+<body>
+  <body onload="slideShow();">
+  <div id="slideshowdiv"></div>
+</body>
+<script type="text/javascript">
+// creates array and holds images
+var imageArray = ['images/unnamed-1.jpg', 'images/unnamed-2.jpg', 'images/unnamed-3.jpg', 'images/unnamed-1.jpg', 'images/unnamed-2.jpg', 'images/unnamed-3.jpg', 'images/unnamed-1.jpg', 'images/unnamed-2.jpg', 'images/unnamed-3.jpg', 'images/unnamed-1.jpg', 'images/unnamed-2.jpg', 'images/unnamed-3.jpg'];
+// set the array to start at 0
+var i = 0;
+
+var speed = 2100;
+var maxSpeed = 0;
+
+// create function 'slideShow'
+function slideShow() {
+increase();
+//increment i by 1
+
+// checks if i is greater than or equal to the length
+if(i != imageArray.length) {
+    // if true, resets value to 0
+    var div = document.getElementById('slideshowdiv');
+    div.innerHTML = '<img src="' + imageArray[i] + '" />';
+    i++;
+};
+// every 2 seconds change image
+timer = setTimeout('slideShow()', speed);
+};
+function increase() {
+  if(speed -100 > maxSpeed )
+    speed -= 250;
+};
+
+</script>
+</html>

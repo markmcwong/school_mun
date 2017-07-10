@@ -1,0 +1,54 @@
+/* Settings & Varaibles start */
+/* Using hyphens - no camelCase along with BEM and ITCSS */
+/* Importing fonts */
+@font-face {
+  font-family: Roboto-Light;
+  src: url(fonts/Roboto-Light.ttf); }
+/* Settings & Varaibles end */
+/* Mixins & Functions start */
+/* Mixins & Functions end */
+/* Base rules start */
+.centered-text {
+  text-align: center; }
+
+.max-width {
+  width: 100%; }
+
+.high-zindex {
+  z-index: 100; }
+
+.fixed-block {
+  display: block;
+  position: fixed; }
+
+/* Base rules end */
+/* Objects start */
+/* Objects end */
+/* Components start */
+/* Header starts */
+nav {
+  top: 0;
+  left: 0; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 0px; }
+      nav ul li:last-child {
+        margin-right: 0; }
+      nav ul li a {
+        font-family: Roboto-Light; }
+  nav > ul > li > ::before, nav > ul > li > ::after {
+    content: none; }
+
+/* Header ends */
+#test {
+  width: 100vw;
+  z-index: -200;
+  position: fixed; }
+
+/* Components end */
+/* Utilities & Overrides start */
+/* Utilities & Overrides end */
+
+/*# sourceMappingURL=index.css.map */

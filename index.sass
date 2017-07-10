@@ -1,0 +1,71 @@
+/* Settings & Varaibles start
+
+/* Using hyphens - no camelCase along with BEM and ITCSS
+/* Importing fonts
+
+@font-face
+  font-family: Roboto-Light
+  src: url(fonts/Roboto-Light.ttf)
+
+$font: Roboto-Light
+
+/* Settings & Varaibles end
+
+/* Mixins & Functions start
+/* Mixins & Functions end
+
+/* Base rules start
+.centered-text
+  text-align: center
+
+.max-width
+  width: 100%
+
+.high-zindex
+  z-index: 100
+
+.fixed-block
+  display: block
+  position: fixed
+
+
+/* Base rules end
+
+/* Objects start
+/* Objects end
+
+/* Components start
+
+/* Header starts
+nav
+  top: 0
+  left: 0
+
+  ul
+    list-style: none
+
+    li
+      display: inline-block
+      margin-right: 0px
+
+      &:last-child
+        margin-right: 0
+
+      a
+        font-family: $font
+
+  > ul > li >
+    \::before, ::after
+      content: none
+
+/* Header ends
+
+#test
+  width: 100vw
+  z-index: -200
+  position: fixed
+
+/* Components end
+
+/* Utilities & Overrides start
+/* Utilities & Overrides end
